@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "StudySpot",
+    "slug": "studyspot",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.studyspot.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "StudySpot needs your location to show nearby study spots on campus."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.studyspot.app",
+      "permissions": ["ACCESS_FINE_LOCATION"]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "StudySpot needs your location to show nearby study spots."
+        }
+      ]
+    ]
+  }
+}
